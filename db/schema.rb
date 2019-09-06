@@ -24,10 +24,10 @@ ActiveRecord::Schema.define(version: 2019_09_06_145501) do
   end
 
   create_table "rosters", force: :cascade do |t|
-    t.string "name"
-    t.string "season"
-    t.integer "league_size"
-    t.string "scoring_format"
+    t.string "name", null: false
+    t.string "season", null: false
+    t.integer "league_size", null: false
+    t.string "scoring_format", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
