@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class RostersController < OpenReadController
-  before_action :set_roster, only: %i[show update destroy]
+  before_action :set_roster, only: %i[update destroy]
 
   # GET /rosters
   def index
@@ -12,7 +12,7 @@ class RostersController < OpenReadController
 
   # GET /rosters/1
   def show
-    render json: @roster
+    render json: Roster.find(params[:id])
   end
 
   # POST /rosters
