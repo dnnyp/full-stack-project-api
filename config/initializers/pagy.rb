@@ -111,7 +111,7 @@ Pagy::VARS[:metadata] = [:count]    # example
 
 # Instance variables
 # See https://ddnexus.github.io/pagy/api/pagy#instance-variables
-Pagy::VARS[:items] = 1                                   # default
+Pagy::VARS[:items] = 10                                  # default
 
 
 # Other Variables
