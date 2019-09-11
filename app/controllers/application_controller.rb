@@ -3,6 +3,7 @@
 # Do not inherit from this class unless you know what you're doing
 # See ProtectedController and OpenReadController
 class ApplicationController < ActionController::API
+  include Pagy::Backend
   # Force to wants JSON for API
   before_action :api_request_settings
   def api_request_settings
