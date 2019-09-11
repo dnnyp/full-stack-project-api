@@ -5,7 +5,7 @@ class RostersController < OpenReadController
 
   # GET /rosters
   def index
-    @rosters = Roster.all
+    @rosters = Roster.paginate(page: params[:page], per_page: 1)
 
     render json: @rosters
   end
