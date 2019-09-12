@@ -1,5 +1,11 @@
 # Fantasy Feedback API
 
+## Project Links
+- https://github.com/dnnyp/full-stack-project-api
+- https://morning-shore-48477.herokuapp.com/rosters
+- https://github.com/dnnyp/full-stack-project-client
+- https://dnnyp.github.io/full-stack-project-client
+
 ## Technologies Used
 - Ruby on Rails
 - Pagy
