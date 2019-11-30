@@ -5,8 +5,6 @@ class RostersController < OpenReadController
 
   # GET /rosters
   def index
-    # @pagy, @rosters = pagy(Roster.all) total: pagy_metadata(@pagy)[:count],
-
     @rosters = Roster.all
 
     render json: { rows: @rosters }
